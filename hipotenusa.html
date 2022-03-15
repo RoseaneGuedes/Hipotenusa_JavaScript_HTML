@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var catetoOposto=parseInt(prompt(" Digite o cateto oposto "));
+    var catetoAdjacente=parseInt(prompt(" Digite o cateto adjacente"));
+    var hipotenusa=Math.sqrt((catetoOposto*catetoOposto)+(catetoAdjacente*catetoAdjacente));
+
+    mostra(" A hipotenusa vale " + hipotenusa);
+    </script>
